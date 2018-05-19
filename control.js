@@ -1,7 +1,15 @@
 
 function readData()
 {
-	var qid=getElementById('qid').value;
-	
-     qid = new query();
+	var qid=document.getElementById('qid').value;
+    var query=document.getElementById('query').value;
+    
+    var newEntry = new Object();
+
+    newEntry.qid=qid;
+    newEntry.query=query;
+
+    alert(newEntry);
+
+    
 }
