@@ -17,24 +17,30 @@
 	
 </head>
 <body>
-	<div>
+	<div class="container">
+
+		<div id="header">
+			<h1>Welcome</h1>
+
+		</div>
+
+
 		<div id="content"></div>
-		<div class="jumbotron">
+		<ul class="nav nav-tabs">
+     		 					
+			<li class="active"><a data-toggle="tab href="#myform">New Query</a></li>
+			<li class="active"><a data-toggle="tab" href="#mytable">Query Maps</a></li>
+			
+	
+	  </ul>
+ 
+	  <div id="myform">
 			<form action="/action_page.php">
 				<div id="query_input" class=""form-group"">
-					<div id="navbar">
-					<nav class="navbar navbar-inverse">
- 			 			<div class="container">
+					
+ 			 			
     
-  		  				<ul class="nav nav-tabs">
-     		 					
-     		 					<li class="active"><a data-toggle="tab href="#">New Query</a></li>
-      							<li><a data-toggle="tab href="#">Query Maps</a></li>
-      					
-   		 				</ul>
-   						</div>
-   					</nav>
-					</div>
+  		  				
 					<label for="qid">Query Id:</label>
     					<input type="query_id" class="form-control" id="qid">
 			
@@ -46,7 +52,8 @@
 				</br>
 			</form>
 		</div>
-		</div>
+	</div>
+		
 	</div>
 
 </body>
