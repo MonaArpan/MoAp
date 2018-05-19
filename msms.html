@@ -26,32 +26,45 @@
 
 
 		<div id="content"></div>
-		<ul class="nav nav-tabs">
+		<ul class="nav nav-tabs" role="tablist">
      		 					
-			<li class="active"><a data-toggle="tab href="#myform">New Query</a></li>
-			<li class="active"><a data-toggle="tab" href="#mytable">Query Maps</a></li>
+			<li class="nav-item active"><a class="nav-link" data-toggle="tab" href="#myform">New Query</a></li>
+			<li class="nav-item"><a class="nav-link" data-toggle="tab" href="#mytable">Query Maps</a></li>
 			
 	
 	  </ul>
- 
-	  <div id="myform">
-			<form action="/action_page.php">
-				<div id="query_input" class=""form-group"">
-					
- 			 			
-    
-  		  				
-					<label for="qid">Query Id:</label>
-    					<input type="query_id" class="form-control" id="qid">
+	  
+	  <div class="tab-content">
 			
-  					<label for="comment">Query:</label>
- 					 <textarea class="form-control" rows="5" id="query"></textarea>
+		<div id="myform" class="container tab-pane active">
+				<h2>New Query</h2>
+				
+				<div id="query_input" class=""form-group">
+					<form action="/action_page.php">
+								
+						<label for="qid">Query Id:</label>
+							<input type="query_id" class="form-control" id="qid">
+				
+						  <label for="comment">Query:</label>
+						  <textarea class="form-control" rows="5" id="query"></textarea>
+					
+						<br>
+						<input type="submit" class="btn btn-primary" value="Submit">
+						</br>
+					</form>
 				</div>
-				<br>
-				<button type="submit" class="btn btn-primary">Submit</button>
-				</br>
-			</form>
-		</div>
+			</div>
+
+
+
+			<div id="mytable" class="container tab-pane fade">
+				<h2>Query Map</h2>
+			</div>
+	  </div>
+
+	 
+			
+		
 	</div>
 		
 	</div>
